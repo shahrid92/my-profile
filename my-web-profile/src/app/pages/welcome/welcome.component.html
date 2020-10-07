@@ -1,0 +1,102 @@
+
+ <div class="columns is-mobile">
+  <div class="column" nz-typography>
+    <div class="animate__animated animate__fadeIn ">
+      <article nz-typography>
+          <h1 nz-typography>Introduction</h1>
+          <p nz-typography>
+            In the process of internal desktop applications development, many different design specs and implementations would be involved,
+            which might cause designers and developers difficulties and duplication and reduce the efficiency of development.
+          </p>
+          <p nz-typography>
+            After massive project practice and summaries, Ant Design, a design language for backgroundapplications, is refined by Ant UED Team,
+            which aims to
+            <span nz-typography
+              ><strong
+                >uniform the user interface specs for internal background projects, lower the unnecessary cost of design differences and
+                implementation and liberate the resources ofdesign and front-end development</strong
+              ></span
+            >.
+          </p>
+          <h2 nz-typography>Guidelines and Resources</h2>
+          <p nz-typography>
+            We supply a series of design principles, practical patterns and high quality design resources (<span nz-typography
+              ><code>Sketch</code></span
+            >
+            and <span nz-typography><code>Axure</code></span
+            >), to help people create their product prototypes beautifully and efficiently
+          </p>
+          <div nz-typography>
+            <ul>
+              <li>
+                <a href="/docs/spec/proximity">Principles</a>
+              </li>
+              <li>
+                <a href="/docs/pattern/navigation">Patterns</a>
+              </li>
+              <li>
+                <a href="/docs/resource/download">Resource Download</a>
+              </li>
+            </ul>
+          </div>
+          <p nz-typography>
+            Press <span nz-typography><kbd>Esc</kbd></span> to exist...
+          </p>
+        </article>
+    </div>
+  </div>
+</div>
+
+  <nz-divider nzText="Highlight" nzOrientation="left"></nz-divider>
+
+  <div class="columns is-mobile">
+    <div class="column" nz-typography>
+      <p nz-typography><strong>Automation</strong></p>
+      <ul>
+        <li>Selenium</li>
+        <li>Cypress</li>
+        <li>Robo Framework</li>
+        <li>Appium</li>
+      </ul>
+    </div>
+    <div class="column" nz-typography>
+      <p nz-typography><strong>Testing</strong></p>
+      <ul>
+        <li>API Testing</li>
+        <li>Regression Testing</li>
+        <li>Functional Testing</li>
+        <li>Performance Testing</li>
+        <li>Smoke, Sanity, Exploratory Testing</li>
+      </ul>
+    </div>
+    <div class="column" nz-typography>
+      <p nz-typography><strong>Programming Language</strong></p>
+      <ul>
+        <li>Java</li>
+        <li>Javascripts</li>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>C Sharp</li>
+      </ul>
+    </div>
+  </div>
+ 
+  <nz-divider nzText="Experiences" nzOrientation="left"></nz-divider>
+
+  <div class="columns is-mobile" >
+    <div class="column" nz-typography >
+      <nz-collapse [nzBordered]="false">
+        <nz-collapse-panel #ul *ngFor="let panel of panels; let i = index" [nzHeader]="panel.name" [nzActive]="panel.active" [nzDisabled]="panel.disabled" [ngStyle]="panel.styles">
+          <div class="panel-box">
+            <ul *ngFor="let c of panel.data">
+              <li >{{c}}</li>
+            </ul>
+          </div>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+
+  <nz-divider nzText="Software" nzOrientation="left"></nz-divider>
+
+  
