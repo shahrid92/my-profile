@@ -15,9 +15,9 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
-import { ScrollingModule } from '@angular/cdk/scrolling';
 import * as AllIcons from '@ant-design/icons-angular/icons';
 import { IconDefinition } from '@ant-design/icons-angular';
+import { DemoNgZorroAntdModule } from './pages/main-module.module';
 registerLocaleData(en);
 
 const antDesignIcons = AllIcons as {
@@ -40,7 +40,7 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesign
     BrowserAnimationsModule,
     NzIconModule,
     NzTimelineModule,
-    
+    DemoNgZorroAntdModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

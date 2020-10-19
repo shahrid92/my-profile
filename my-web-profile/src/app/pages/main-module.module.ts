@@ -66,6 +66,7 @@ import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzResizableModule } from 'ng-zorro-antd/resizable';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
@@ -135,7 +136,8 @@ import { NzResizableModule } from 'ng-zorro-antd/resizable';
     NzUploadModule,
     NzWaveModule,
     NzResizableModule,
-  ]
+  ],
+  declarations: [ProjectsComponent]
 })
 export class DemoNgZorroAntdModule {
 
