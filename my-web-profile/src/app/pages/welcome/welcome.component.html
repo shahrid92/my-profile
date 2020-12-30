@@ -1,0 +1,182 @@
+<div >
+  <div class="columns is-mobile ">
+    <div class="column" nz-typography>
+      <div class="animate__animated animate__fadeIn ">
+        <article nz-typography>
+          <h1 nz-typography>Hi!, I'm Shah Ridzuan</h1>
+          <p nz-typography class="justifyText">
+            Welcome to my profile! I believe the only way you can find this site from my resume. So let's talk little bit about me. I'm an software test engineer over the years. this is my simple web profile page.
+            This is just initial personal projects just to explore latest technology in web development. This web app will be my playground for me 
+            to develop something simple just for personal experience.just litle bit summary of myself, I'm graduate at 2017 major in software engineering, start first job as junior tester
+            from there learning testing process, software development lifecycle and automation testing. After few years, now i'm experience in performing functionality testing , integration testing,
+            regression testing, conduct uat session and agile projects. at the same time, i always find myself learning other tech such as devops and big data. this is important for me because,
+            i dont want to be  shock if i join devops environment projects. at least i got some knowledge about it, which gave me an advatages to started on.
+          </p>
+
+      
+          
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <nz-divider nzText="Highlight" nzOrientation="left"></nz-divider>
+
+  <div class="columns is-mobile">
+    <div class="column" nz-typography>
+      <p nz-typography><strong>Automation</strong></p>
+      <ul>
+        <li>Selenium</li>
+        <li>Cypress</li>
+        <li>Robo Framework</li>
+        <li>Appium</li>
+      </ul>
+    </div>
+    <div class="column" nz-typography>
+      <p nz-typography><strong>Testing</strong></p>
+      <ul>
+        <li>API Testing</li>
+        <li>Regression Testing</li>
+        <li>Functional Testing</li>
+        <li>Performance Testing</li>
+        <li>Smoke, Sanity, Exploratory Testing</li>
+      </ul>
+    </div>
+    <div class="column" nz-typography>
+      <p nz-typography><strong>Programming Language</strong></p>
+      <ul>
+        <li>Java</li>
+        <li>Javascripts</li>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>C Sharp</li>
+      </ul>
+    </div>
+  </div>
+
+  <nz-divider nzText="Role / Experiences" nzOrientation="left"></nz-divider>
+
+  <div class="columns is-mobile">
+    <div class="column" nz-typography>
+      <nz-collapse [nzBordered]="false">
+        <nz-collapse-panel #ul *ngFor="let panel of panels; let i = index" [nzHeader]="panel.name"
+          [nzActive]="panel.active" [nzDisabled]="panel.disabled" [ngStyle]="panel.styles">
+          <div class="panel-box">
+            <ul *ngFor="let c of panel.data">
+              <li>{{c}}</li>
+            </ul>
+          </div>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+
+  <nz-divider nzText="Technical Toolkit" nzOrientation="left"></nz-divider>
+
+  <div class="columns">
+    <div class="column">
+      <nz-card style="border-radius: 25px;" [nzBordered]="false" nzTitle="Testing Tools">
+        <div class="columns">
+          <div class="column">
+            <p>HP ALM</p>
+            <p>JMeter</p>
+            <p>Jira</p>
+          </div>
+          <div class="column">
+            <p> </p>
+            <p> </p>
+            <p> </p>
+          </div>
+        </div>
+      </nz-card>
+    </div>
+    <div class="column">
+      <nz-card style="border-radius: 25px;" [nzBordered]="false" nzTitle="CI/CD">
+        <div class="columns">
+          <div class="column">
+            <p>Jenkins</p>
+            <p>GitLab</p>
+            <p>Bamboo</p>
+          </div>
+          <div class="column">
+            <p>TeamCity</p>
+            <p>Docker</p>
+            <p>Kubernates</p>
+          </div>
+        </div>
+      </nz-card>
+    </div>
+    <div class="column">
+      <nz-card style="border-radius: 25px;" [nzBordered]="false" nzTitle="Cloud ">
+        <div class="columns">
+          <div class="column">
+            <p>Amazon EC2</p>
+            <p>Amazon S3</p>
+            <p>GCP</p>
+          </div>
+        </div>
+      </nz-card>
+    </div>
+    <div class="column">
+      <nz-card style="border-radius: 25px;" [nzBordered]="false" nzTitle="Others">
+        <div class="columns">
+          <div class="column">
+            <p>HP UFT</p>
+            <p>Angular</p>
+            <p>Springboot</p>
+          </div>
+        </div>
+      </nz-card>
+    </div>
+  </div>
+
+  <nz-divider nzText="Interested Topics" nzOrientation="left"></nz-divider>
+
+  <div class="columns">
+    <div class="column">
+      <nz-card style="border-radius: 25px;" [nzBordered]="false" nzTitle="Big Data">
+        <div class="columns">
+          <div class="column">
+            <p>Hadoop Framework</p>
+            <p>Automated ETL</p>
+            <p>Machine Learning</p>
+          </div>
+        </div>
+      </nz-card>
+    </div>
+    <div class="column">
+      <nz-card style="border-radius: 25px;" [nzBordered]="false" nzTitle="Development">
+        <div class="columns">
+          <div class="column">
+            <p>PWA</p>
+            <p>Mobile Apps</p>
+            <p>UI/UX</p>
+          </div>
+        </div>
+      </nz-card>
+    </div>
+    <div class="column">
+      <nz-card style="border-radius: 25px;" [nzBordered]="false" nzTitle="Project Management ">
+        <div class="columns">
+          <div class="column">
+            <p>Agile Project Management</p>
+            <p>Scrum Team</p>
+            <p>Test Management</p>
+          </div>
+        </div>
+      </nz-card>
+    </div>
+    <div class="column">
+      <nz-card style="border-radius: 25px;" [nzBordered]="false" nzTitle="Others">
+        <div class="columns">
+          <div class="column">
+            <p>Iot</p>
+            <p>Automotive</p>
+            <p>SpaceX</p>
+          </div>
+        </div>
+      </nz-card>
+    </div>
+  </div>
+
+</div>
